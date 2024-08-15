@@ -9,16 +9,17 @@ generator client {
 }
 
 model User {
-    id          String    @id
-    firstName   String?
-    lastName    String?
-    username    String    @unique
-    displayName String
-    email       String?   @unique
-    avatarUrl   String?
-    bio         String?
-    googleId    String?
-    Session     Session[]
+    id           String    @id
+    firstName    String?
+    lastName     String?
+    username     String    @unique
+    displayName  String
+    email        String?   @unique
+    passwordHash String?
+    avatarUrl    String?
+    bio          String?
+    googleId     String?   @unique
+    Session      Session[]
 
     createdAt DateTime @default(now())
 
