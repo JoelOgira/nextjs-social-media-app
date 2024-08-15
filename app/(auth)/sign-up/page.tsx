@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 export default function SignUpPage() {
   return (
     <main className="flex justify-center items-center h-screen p-5">
-      <div className="flex h-full max-h-[44rem] w-full max-w-[64rem] overflow-hidden rounded-2xl bg-card shadow-2xl">
-        <div className="w-full space-y-10 overflow-y-auto p-10 md:w-1/2">
+      <div className="flex h-full max-h-[50rem] w-full max-w-[64rem] overflow-hidden rounded-2xl bg-card shadow-2xl">
+        <div className="w-full space-y-6 overflow-y-auto p-10 md:w-1/2">
           <div className="space-y-1 text-center">
             <h1 className="text-3xl font-bold text-primary">
               Sign Up to bugbook
@@ -26,7 +26,10 @@ export default function SignUpPage() {
           <div className="space-y-5">
             <SignUpForm />
 
-            <Link href="/sign-in" className="block text-center hover:underline">
+            <Link
+              href="/sign-in"
+              className="text-muted-foreground block text-center hover:underline"
+            >
               Already have an account? Sign in
             </Link>
           </div>
