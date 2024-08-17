@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function SignUpPage() {
   return (
     <main className="flex justify-center items-center h-screen p-5">
-      <div className="flex h-full max-h-[50rem] w-full max-w-[64rem] overflow-hidden rounded-2xl bg-card shadow-2xl">
+      <div className="flex h-fit max-h-[50rem] w-full max-w-[64rem] overflow-hidden rounded-2xl bg-card shadow-2xl">
         <div className="w-full space-y-6 overflow-y-auto p-10 md:w-1/2">
           <div className="space-y-1 text-center">
             <h1 className="text-3xl font-bold text-primary">
