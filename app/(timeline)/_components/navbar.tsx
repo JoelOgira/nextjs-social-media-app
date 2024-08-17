@@ -36,16 +36,11 @@ export default function Navbar() {
           )}
         </MaxWidthWrapper>
       ) : (
-        <MaxWidthWrapper className="flex flex-wrap items-center justify-between">
-          <div className="flex flex-wrap items-center space-x-3">
-            <Link
-              href="/"
-              className="text-xl font-bold text-primary sm:text-2xl"
-            >
-              bugbook
-            </Link>
-            <SearchField />
-          </div>
+        <MaxWidthWrapper className="flex flex-wrap items-center justify-between gap-2">
+          <Link href="/" className="text-lg font-bold text-primary sm:text-2xl">
+            bugbook
+          </Link>
+          <SearchField />
           <UserButton />
         </MaxWidthWrapper>
       )}
