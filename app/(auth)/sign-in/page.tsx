@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function SignInPage() {
   return (
     <main className="h-screen flex items-center justify-center p-5">
-      <div className="flex overflow-hidden h-full max-h-[40rem] w-full max-w-[64rem] bg-card shadow-2xl rounded-2xl">
+      <div className="flex overflow-hidden h-fit max-h-[40rem] w-full max-w-[64rem] bg-card shadow-2xl rounded-2xl">
         <div className="overflow-y-auto p-10 w-full space-y-5 md:w-1/2 ">
           <h1 className="text-3xl text-center font-bold text-primary">
             Sign In to bugbook
