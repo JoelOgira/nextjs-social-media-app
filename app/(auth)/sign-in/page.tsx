@@ -20,7 +20,7 @@ export default function SignInPage() {
             <SignInForm />
 
             <Link
-              href="/signup"
+              href="/sign-up"
               className="block text-center text-sm hover:underline"
             >
               Don&apos;t have an account? Sign Up
