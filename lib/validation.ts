@@ -21,3 +21,9 @@ export const signInSchema = z.object({
 });
 
 export type SignInValues = z.infer<typeof signInSchema>;
+
+export const searchSchema = z.object({
+  q: requiredString,
+});
+
+export type SearchFormValues = z.infer<typeof searchSchema>;
