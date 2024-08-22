@@ -20,8 +20,8 @@ export default function SignOutPage() {
   return (
     <main className="h-screen flex items-center justify-center p-5">
       <div className="flex flex-col rounded-2xl bg-card p-6 space-y-2 max-w-80 shadow-2xl">
-        <h1 className="text-center font-bold text-3xl text-primary pb-4">
-          bugbook
+        <h1 className="text-center font-bold text-2xl text-primary pb-4 md:text-3xl">
+          Sign Out gumzo
         </h1>
         <h2 className="font-medium text-lg">Sign out of bugbook?</h2>
         <p className="text-muted-foreground text-sm pb-4">
