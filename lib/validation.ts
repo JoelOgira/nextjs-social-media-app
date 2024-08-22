@@ -27,3 +27,9 @@ export const searchSchema = z.object({
 });
 
 export type SearchFormValues = z.infer<typeof searchSchema>;
+
+export const createPostSchema = z.object({
+  content: requiredString,
+});
+
+export type CreatePost = z.infer<typeof createPostSchema>;
