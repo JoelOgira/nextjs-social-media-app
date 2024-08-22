@@ -3,7 +3,7 @@
 import MaxWidthWrapper from "@/app/(timeline)/_components/max-width-wrapper";
 import Link from "next/link";
 import SearchField from "./search-field";
-import UserButton from "./user-button";
+import UserButton from "../../../components/user-button";
 import { cn } from "@/lib/utils";
 import { useSearchContext } from "../_providers/search-context";
 
@@ -11,7 +11,7 @@ export default function Navbar() {
   const { isMobile, showSearch } = useSearchContext();
 
   return (
-    <header className="sticky inset-x-0 top-0 z-[40] w-full bg-card py-3 backdrop-blur-lg transition-all">
+    <header className="sm:sticky inset-x-0 top-0 z-[40] w-full bg-card py-3 backdrop-blur-lg transition-all">
       {isMobile ? (
         <MaxWidthWrapper
           className={cn(
@@ -24,7 +24,7 @@ export default function Navbar() {
               href="/"
               className="text-xl font-bold text-primary sm:text-2xl"
             >
-              bugbook
+              gumzo
             </Link>
             <UserButton />
           </div>
@@ -38,7 +38,7 @@ export default function Navbar() {
       ) : (
         <MaxWidthWrapper className="flex flex-wrap items-center justify-between gap-2">
           <Link href="/" className="text-lg font-bold text-primary sm:text-2xl">
-            bugbook
+            gumzo
           </Link>
           <SearchField />
           <UserButton />
