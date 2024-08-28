@@ -21,7 +21,7 @@ export default function SignInPage() {
 
             <Link
               href="/sign-up"
-              className="block text-center text-sm hover:underline"
+              className="block text-center text-muted-foreground text-sm hover:underline"
             >
               Don&apos;t have an account? Sign Up
             </Link>
