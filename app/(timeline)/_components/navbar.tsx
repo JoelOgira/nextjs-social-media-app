@@ -3,7 +3,7 @@
 import MaxWidthWrapper from "@/app/(timeline)/_components/max-width-wrapper";
 import Link from "next/link";
 import SearchField from "./search-field";
-import UserButton from "./user-button";
+import UserButton from "@/components/user-button";
 import { cn } from "@/lib/utils";
 import { useSearchContext } from "../_providers/search-context";
 
