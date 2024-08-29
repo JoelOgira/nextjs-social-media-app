@@ -24,7 +24,7 @@ export default function Navbar() {
               href="/"
               className="text-xl font-bold text-primary sm:text-2xl"
             >
-              bugbook
+              gumzo
             </Link>
             <UserButton />
           </div>
@@ -38,7 +38,7 @@ export default function Navbar() {
       ) : (
         <MaxWidthWrapper className="flex flex-wrap items-center justify-between gap-2">
           <Link href="/" className="text-lg font-bold text-primary sm:text-2xl">
-            bugbook
+            gumzo
           </Link>
           <SearchField />
           <UserButton />
