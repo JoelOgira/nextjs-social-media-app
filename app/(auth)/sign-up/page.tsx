@@ -12,10 +12,10 @@ export default function SignUpPage() {
   return (
     <main className="flex justify-center items-center h-screen p-5">
       <div className="flex h-fit max-h-[50rem] w-full max-w-[64rem] overflow-hidden rounded-2xl bg-card shadow-2xl">
-        <div className="w-full space-y-6 overflow-y-auto p-10 md:w-1/2">
+        <div className="w-full space-y-6 overflow-y-auto p-5 md:w-1/2 lg:p-10">
           <div className="space-y-1 text-center">
-            <h1 className="text-3xl font-bold text-primary">
-              Sign Up to bugbook
+            <h1 className="text-2xl font-bold text-primary">
+              Sign Up to gumzo
             </h1>
             <p className="text-muted-foreground">
               A place where even{" "}
@@ -28,7 +28,7 @@ export default function SignUpPage() {
 
             <Link
               href="/sign-in"
-              className="text-muted-foreground block text-center hover:underline"
+              className="text-muted-foreground text-sm block text-center hover:underline"
             >
               Already have an account? Sign in
             </Link>
