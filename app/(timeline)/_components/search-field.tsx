@@ -6,7 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { SearchFormValues, searchSchema } from "@/lib/validation";
 import { SearchInput } from "@/components/search-input";
-import { useSearchContext } from "../_providers/search-context";
+import { useSearchContext } from "../_providers/search-provider";
 
 export default function SearchField() {
   const router = useRouter();
