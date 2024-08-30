@@ -19,25 +19,25 @@ export default function SignOutPage() {
 
   return (
     <main className="h-screen flex items-center justify-center p-5">
-      <div className="flex flex-col rounded-2xl bg-card p-6 space-y-2 max-w-80 shadow-2xl">
-        <h1 className="text-center font-bold text-3xl text-primary pb-4">
-          bugbook
+      <div className="flex flex-col rounded-2xl bg-card p-4 space-y-2 max-w-96 shadow-2xl">
+        <h1 className="text-center font-bold text-2xl text-primary pb-4 md:text-3xl">
+          gumzo
         </h1>
-        <h2 className="font-medium text-lg">Sign out of bugbook?</h2>
-        <p className="text-muted-foreground text-sm pb-4">
+        <h2 className="font-medium text-lg">Sign out of gumzo?</h2>
+        <p className="text-muted-foreground pb-4">
           You can always sign back in at any time and continue socializing with
           members of out community.
         </p>
-        <Button className="rounded-full" onClick={handleSignOut}>
-          Sign Out
-        </Button>
-        <Button
-          variant="outline"
-          className="rounded-full text-primary"
-          onClick={() => router.back()}
-        >
-          Cancel
-        </Button>
+        <div className="flex flex-col space-y-3">
+          <Button onClick={handleSignOut}>Sign Out</Button>
+          <Button
+            variant="outline"
+            className="text-primary"
+            onClick={() => router.back()}
+          >
+            Cancel
+          </Button>
+        </div>
       </div>
     </main>
   );
