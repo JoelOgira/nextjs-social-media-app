@@ -5,7 +5,7 @@ import Link from "next/link";
 import SearchField from "./search-field";
 import UserButton from "@/components/user-button";
 import { cn } from "@/lib/utils";
-import { useSearchContext } from "../_providers/search-provider";
+import { useSearchContext } from "@/providers/search-provider";
 
 export default function Navbar() {
   const { isMobile, showSearch } = useSearchContext();
