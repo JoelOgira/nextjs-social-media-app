@@ -12,7 +12,7 @@ export default function LoadingButton({
   ...props
 }: LoadingButtonProps) {
   return (
-    <Button className="rounded-full w-full">
+    <Button className="w-full">
       {loading && <Loader2 className="animate-spin size-5" />}
       {props.children}
     </Button>
