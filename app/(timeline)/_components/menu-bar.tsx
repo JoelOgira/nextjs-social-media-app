@@ -4,7 +4,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Bell, Bookmark, Home, Mail, SearchIcon } from "lucide-react";
 import Link from "next/link";
-import { useSearchContext } from "../_providers/search-provider";
+import { useSearchContext } from "@/providers/search-provider";
 
 interface MenuBarProps {
   className?: string;
