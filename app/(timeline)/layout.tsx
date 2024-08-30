@@ -4,7 +4,7 @@ import { SessionProvider } from "@/providers/session-provider";
 import { validateRequest } from "@/auth";
 import { redirect } from "next/navigation";
 import MenuBar from "./_components/menu-bar";
-import { SearchProvider } from "./_providers/search-context";
+import { SearchProvider } from "@/providers/search-provider";
 
 export default async function TimelineLayout({
   children,
