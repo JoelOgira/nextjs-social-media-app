@@ -4,9 +4,12 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { signOut } from "./action";
+import { useQueryClient } from "@tanstack/react-query";
 
 export default function SignOutPage() {
   const router = useRouter();
+
+  const queryClient = useQueryClient();
 
   const handleSignOut = async () => {
     const result = await signOut();
@@ -29,7 +32,14 @@ export default function SignOutPage() {
           members of out community.
         </p>
         <div className="flex flex-col space-y-3">
-          <Button onClick={handleSignOut}>Sign Out</Button>
+          <Button
+            onClick={() => {
+              queryClient.clear();
+              handleSignOut();
+            }}
+          >
+            Sign Out
+          </Button>
           <Button
             variant="outline"
             className="text-primary"
