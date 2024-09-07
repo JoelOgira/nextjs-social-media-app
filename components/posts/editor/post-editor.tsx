@@ -3,15 +3,18 @@
 import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import Placeholder from "@tiptap/extension-placeholder";
-import { submitPost } from "./actions";
 import UserAvatar from "@/components/user-avatar";
 import { useSession } from "@/providers/session-provider";
 import { Button } from "@/components/ui/button";
 
 import "./styles.css";
+import { useSubmitPostMutation } from "./mutations";
+import { Loader2 } from "lucide-react";
 
 export default function PostEditor() {
   const { user } = useSession();
+
+  const mutation = useSubmitPostMutation();
 
   const editor = useEditor({
     extensions: [
@@ -31,9 +34,12 @@ export default function PostEditor() {
       blockSeparator: "\n",
     }) || "";
 
-  async function onSubmit() {
-    await submitPost(input);
-    editor?.commands.clearContent();
+  function onSubmit() {
+    mutation.mutate(input, {
+      onSuccess: () => {
+        editor?.commands.clearContent();
+      },
+    });
   }
 
   return (
@@ -52,9 +58,12 @@ export default function PostEditor() {
       <div className="flex justify-end">
         <Button
           onClick={onSubmit}
-          className="min-w-20"
+          className="min-w-20 flex items-center"
           disabled={!input.trim()}
         >
+          {mutation.isPending && (
+            <Loader2 className="animate-spin size-5 mr-2" />
+          )}
           Post
         </Button>
       </div>
