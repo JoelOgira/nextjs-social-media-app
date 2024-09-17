@@ -29,7 +29,7 @@ export default function SignOutPage() {
         <h2 className="font-medium text-lg">Sign out of gumzo?</h2>
         <p className="text-muted-foreground pb-4">
           You can always sign back in at any time and continue socializing with
-          members of out community.
+          members of our community.
         </p>
         <div className="flex flex-col space-y-3">
           <Button
